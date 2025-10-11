@@ -3,13 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projects</title>
+    <title>Skills - [Your Name]</title>
     <style>
         body {
             font-family: Arial, sans-serif;
-            margin: 40px;
             background-color: #f9f9f9;
+            margin: 40px;
             color: #333;
+        }
+        nav {
+            background-color: #007acc;
+            padding: 10px 20px;
+            border-radius: 8px;
+            text-align: left;
+        }
+        nav a {
+            color: white;
+            margin-right: 15px;
+            text-decoration: none;
         }
         .container {
             max-width: 700px;
@@ -18,41 +29,57 @@
             padding: 30px;
             border-radius: 10px;
             box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-        }
-        a {
-            color: #007acc;
+            text-align: center;
         }
         h1 {
             color: #007acc;
         }
-        .project {
-            margin-bottom: 20px;
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 20px;
+        }
+        .skill-badge {
+            display: inline-block;
+            padding: 10px 15px;
+            border-radius: 8px;
+            background-color: #f0f0f0;
+            color: #333;
+            font-weight: bold;
+            font-size: 14px;
+        }
+        .skill-badge img {
+            vertical-align: middle;
+            margin-right: 5px;
+            height: 18px;
         }
     </style>
 </head>
 <body>
-<nav style="background-color:#007acc;padding:10px 20px;border-radius:8px;text-align:center;">
-  <a href="index.html" style="color:white; margin-right:15px; text-decoration:none;">Home</a>
-  <a href="projects.html" style="color:white; margin-right:15px; text-decoration:none;">Projects</a>
-  <a href="skills.html" style="color:white; margin-right:15px; text-decoration:none;">Skills</a>
-  <a href="resume.html" style="color:white; margin-right:15px; text-decoration:none;">Resume</a>
-  <a href="contact.html" style="color:white; text-decoration:none;">Contact</a>
-</nav>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="projects.html">Projects</a>
+        <a href="skills.html">Skills</a>
+        <a href="resume.html">Resume</a>
+        <a href="contact.html">Contact</a>
+    </nav>
     <div class="container">
-        <h1>My Projects</h1>
-        <p><a href="index.html">← Back to Home</a></p>
+        <h1>My Skills</h1>
+        <p>Here are some of the programming languages, tools, and frameworks I work with:</p>
 
-        <div class="project">
-            <h2>🎮 Dungeon Crawler</h2>
-            <p>A multiplayer dungeon game built with Unity and Netcode for GameObjects. Features enemy AI and procedural room generation.</p>
-            <a href="https://github.com/yourusername/DungeonCrawler">View on GitHub</a>
-        </div>
-
-        <div class="project">
-            <h2>📱 Study Planner App</h2>
-            <p>A web app that generates AI-based study schedules using React and Firebase.</p>
-            <a href="https://github.com/yourusername/StudyPlanner">View on GitHub</a>
+        <div class="skills">
+            <div class="skill-badge"><img src="https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=white" alt="Python">Python</div>
+            <div class="skill-badge"><img src="https://img.shields.io/badge/C++-00599C?logo=c%2B%2B&logoColor=white" alt="C++">C++</div>
+            <div class="skill-badge"><img src="https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=black" alt="JavaScript">JavaScript</div>
+            <div class="skill-badge"><img src="https://img.shields.io/badge/React-61DAFB?logo=react&logoColor=black" alt="React">React</div>
+            <div class="skill-badge"><img src="https://img.shields.io/badge/Node.js-339933?logo=node.js&logoColor=white" alt="Node.js">Node.js</div>
+            <div class="skill-badge"><img src="https://img.shields.io/badge/Unity-000000?logo=unity&logoColor=white" alt="Unity">Unity</div>
+            <div class="skill-badge"><img src="https://img.shields.io/badge/Git-F05032?logo=git&logoColor=white" alt="Git">Git</div>
+            <div class="skill-badge"><img src="https://img.shields.io/badge/Firebase-FFCA28?logo=firebase&logoColor=black" alt="Firebase">Firebase</div>
         </div>
     </div>
+
 </body>
 </html>
