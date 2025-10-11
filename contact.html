@@ -3,13 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projects</title>
+    <title>Contact</title>
     <style>
         body {
             font-family: Arial, sans-serif;
-            margin: 40px;
             background-color: #f9f9f9;
+            margin: 40px;
             color: #333;
+        }
+        nav {
+            background-color: #007acc;
+            padding: 10px 20px;
+            border-radius: 8px;
+            text-align: left;
+        }
+        nav a {
+            color: white;
+            margin-right: 15px;
+            text-decoration: none;
         }
         .container {
             max-width: 700px;
@@ -18,41 +29,36 @@
             padding: 30px;
             border-radius: 10px;
             box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+            text-align: center;
         }
-        a {
+        .contact-link {
+            display: block;
+            margin: 10px 0;
+            font-size: 18px;
             color: #007acc;
+            text-decoration: none;
         }
-        h1 {
-            color: #007acc;
-        }
-        .project {
-            margin-bottom: 20px;
+        .contact-link:hover {
+            text-decoration: underline;
         }
     </style>
 </head>
 <body>
-<nav style="background-color:#007acc;padding:10px 20px;border-radius:8px;text-align:center;">
-  <a href="index.html" style="color:white; margin-right:15px; text-decoration:none;">Home</a>
-  <a href="projects.html" style="color:white; margin-right:15px; text-decoration:none;">Projects</a>
-  <a href="skills.html" style="color:white; margin-right:15px; text-decoration:none;">Skills</a>
-  <a href="resume.html" style="color:white; margin-right:15px; text-decoration:none;">Resume</a>
-  <a href="contact.html" style="color:white; text-decoration:none;">Contact</a>
-</nav>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="projects.html">Projects</a>
+        <a href="skills.html">Skills</a>
+        <a href="resume.html">Resume</a>
+        <a href="contact.html">Contact</a>
+    </nav>
     <div class="container">
-        <h1>My Projects</h1>
-        <p><a href="index.html">← Back to Home</a></p>
+        <h1>Contact Me</h1>
+        <p>If you’d like to reach out, feel free to use any of the links below:</p>
 
-        <div class="project">
-            <h2>🎮 Dungeon Crawler</h2>
-            <p>A multiplayer dungeon game built with Unity and Netcode for GameObjects. Features enemy AI and procedural room generation.</p>
-            <a href="https://github.com/yourusername/DungeonCrawler">View on GitHub</a>
-        </div>
-
-        <div class="project">
-            <h2>📱 Study Planner App</h2>
-            <p>A web app that generates AI-based study schedules using React and Firebase.</p>
-            <a href="https://github.com/yourusername/StudyPlanner">View on GitHub</a>
-        </div>
+        <a class="contact-link" href="mailto:your.email@example.com">📧 Email Me</a>
+        <a class="contact-link" href="https://github.com/yourusername" target="_blank">🐱 GitHub</a>
+        <a class="contact-link" href="https://linkedin.com/in/yourprofile" target="_blank">💼 LinkedIn</a>
     </div>
+
 </body>
 </html>
